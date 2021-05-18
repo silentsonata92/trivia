@@ -139,12 +139,20 @@ document.getElementById('submitScore').addEventListener('click', event => {
   tableElem.append(tableBody)
   document.getElementById('question').append(tableElem)
   document.getElementById('submitScore').disabled =true
+
+  document.getElementById('reset').addEventListener('click', event=>{
+    event.preventDefault()
+    let clear = confirm('Are you sure you want to clear EVERYTHING?')
+    if(clear){
+      let scores = []
+      tableElem.style.display= "none"
+      localStorage.setItem('scores', JSON.stringify(scores))
+    }else{
+      return
+    }
+  })
 })
 
-document.getElementById('clear').addEventListener('click', event=>{
-event.preventDefault()
-  tableElem.innerHTML = ''
-})
 
 
 document.getElementById('playAgain').addEventListener('click', event=> {
