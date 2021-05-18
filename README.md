@@ -1,6 +1,6 @@
 # Code Trivia
 ## Description
-- Motiviation: To practice what I have learned/
+- Motiviation: To practice what I have learned
 - Built this project with the intention to improve myself and to learn more 
 - During this project, the hardest part was utilzing all the information I learned. The biggest problems were related to how much material we had learned and had to put into practice in such a short time for such a big assignment.
 - I learned that utilizing outside resources and allowing yourself to understand the material better through the use of google or stackoverflow supplements what I've learned in class.

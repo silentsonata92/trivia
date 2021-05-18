@@ -138,8 +138,16 @@ document.getElementById('submitScore').addEventListener('click', event => {
 
   tableElem.append(tableBody)
   document.getElementById('question').append(tableElem)
+  document.getElementById('submitScore').disabled =true
 })
+
+document.getElementById('clear').addEventListener('click', event=>{
+event.preventDefault()
+  tableElem.innerHTML = ''
+})
+
 
 document.getElementById('playAgain').addEventListener('click', event=> {
   window.location.reload(true)  
 })
+
