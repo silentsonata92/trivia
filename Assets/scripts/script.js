@@ -114,6 +114,7 @@ document.getElementById('submitScore').addEventListener('click', event => {
   localStorage.setItem('scores', JSON.stringify(scores))
 
   scores.sort((a, b) => b.score - a.score)
+
   let tableElem = document.createElement('table')
   tableElem.className = 'table'
   tableElem.innerHTML = `
@@ -132,11 +133,12 @@ document.getElementById('submitScore').addEventListener('click', event => {
             <td>${scores[i].initials}</td>
             <td>${scores[i].score}</td>
           </tr>
-          `
-    tableElem.append(tableBody)
-    document.getElementById('question').append(tableElem)
-  }       
-})   
+        `
+  }
+
+  tableElem.append(tableBody)
+  document.getElementById('question').append(tableElem)
+})
 
 document.getElementById('playAgain').addEventListener('click', event=> {
   window.location.reload(true)  
